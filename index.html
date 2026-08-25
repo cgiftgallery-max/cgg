@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+	<meta charset="utf-8">
+	<title>Custom Gift Gallery - কাস্টমাইজড গিফট গ্যালারি</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Custom Gift Gallery">
+	<meta name="robots" content="index, follow">
+
+	<!-- SEO Meta Tags -->
+	<meta name="title" content="Custom Gift Gallery - কাস্টমাইজড গিট গ্যালারি">
+	<meta name="description" content="ভালোবাসার প্রিয় মুহূর্তগুলোকে স্মৃতি বানিয়ে রাখতে কাস্টমাইজড গিফট কিনুন। কাঠের ফটো ফ্রেম, এক্রিলিক ল্যাম্প, কাস্টম মগ, ওয়ালেট ও অন্যান্য বিশেষ উপহার এক জায়গায়!">
+	<meta name="keywords" content="Custom Gift Gallery, Personalized Gifts Bangladesh, Customized Photo Frame, Acrylic Lamp, Custom Mug, Custom Wallet, CGG Chattogram, কাস্টমাইজড উপহার, পারসোনালাইজড গিফট, কাঠের ফটো ফ্রেম, এক্রিলিক ল্যাম্প, উপহার চট্টগ্রাম, চট্টগ্রাম গিফট শপ">
+
+	<!-- Open Graph / Facebook / WhatsApp Link Preview Tags -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://customgiftgallerybd.com/">
+	<meta property="og:title" content="Custom Gift Gallery - ভালোবাসার সেরা গিফট গ্যালারি">
+	<meta property="og:description" content="প্রিয়জনের জন্য দারুণ সব কাস্টমাইজড গিফট পেতে ভিজিট করুন Custom Gift Gallery। অর্ডার করতে আজই মেসেজ দিন।">
+	<meta property="og:image" content="https://customgiftgallerybd.com/images/fb.jpg">
+
+	<!-- Twitter Preview Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Custom Gift Gallery - ভালোবাসার সেরা গিফট গ্যালারি">
+	<meta name="twitter:description" content="প্রিয়জনের জন্য দারুণ সব কাস্টমাইজড গিফট পেতে ভিজিট করুন Custom Gift Gallery।">
+	<meta name="twitter:image" content="https://customgiftgallerybd.com/images/fb.jpg">
+	
+	<!-- Favicon Tag -->
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	
+	<!-- Font Awesome 6 Latest CDN (Fixed Broken Icons) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	
+	<!-- Nivo Lightbox CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nivo-lightbox/1.2.0/nivo-lightbox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nivo-lightbox/1.2.0/themes/default/default.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+	
+	<!-- Google Fonts: Hind Siliguri (Bengali) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<style>
+		/* Payment Badges */
+		.payment-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11.5px;
+    font-weight: 600;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+}
+
+		/* Footer Link Styling */
+		footer ul.footer-links {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		footer ul.footer-links li {
+			margin-bottom: 8px;
+		}
+		footer ul.footer-links li a {
+			color: #d1d5db;
+			text-decoration: none;
+			transition: color 0.2s ease;
+			font-size: 14px;
+		}
+		footer ul.footer-links li a:hover {
+			color: #d97706;
+			padding-left: 4px;
+		}
+
+		/* Jotform Modal iframe & Watermark Hide Styling */
+		.jotform-crop-container {
+			position: relative;
+			width: 1000px;
+			max-width: 100%;
+			height: 480px;
+			overflow: hidden;
+		}
+		.jotform-crop-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 560px;
+			border: none;
+		}
+
+		/* Mobile Responsive Fine-Tuning for Home Section */
+		@media (max-width: 768px) {
+			#home.parallax-section {
+				padding-top: 110px !important;
+				padding-bottom: 60px !important;
+				height: auto !important;
+				min-height: auto !important;
+			}
+			.hero-container {
+				flex-direction: column !important;
+				text-align: center !important;
+				gap: 20px !important;
+			}
+			.hero-text {
+				text-align: center !important;
+				padding: 0 10px !important;
+			}
+			.hero-text span {
+				font-size: 14px !important;
+			}
+			.hero-text h1 {
+				font-size: 26px !important;
+				line-height: 1.3 !important;
+			}
+			.hero-text p {
+				font-size: 14px !important;
+			}
+			.hero-text .btn {
+				margin: 10px auto 0 auto !important;
+				display: inline-block !important;
+			}
+			.hero-video {
+				width: 100% !important;
+				display: flex !important;
+				justify-content: center !important;
+			}
+			.hero-video video {
+				max-width: 100% !important;
+				height: auto !important;
+				border-radius: 8px !important;
+			}
+		}
+	</style>
+</head>
+<body>
+
+
+<!-- navigation section -->
+<section class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand">
+				<img src="images/logo.png" alt="Custom Gift Gallery Logo" class="site-logo">CUSTOM GIFT GALLERY</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#gallery" class="smoothScroll">GIFT GALLERY</a></li>
+				<li><a href="#menu" class="smoothScroll">MATERIAL</a></li>
+				<li><a href="#team" class="smoothScroll">SPECIAL GIFT</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- home section -->
+<section id="home" class="parallax-section" style="padding-top: 50px !important; padding-bottom: 150px !important; min-height: 85vh;">
+	<div class="container hero-container">
+		<!-- বাম পাশের লেখা -->
+		<div class="hero-text">
+			<span style="color: #fde047; font-size: 16px; font-weight: 600; letter-spacing: 1px; display: block; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">✨ আপনার আবেগ, আমাদের নিখুঁত সৃষ্টি ✨</span>
+			<h1 class="bangla-text" style="font-size: 38px; font-weight: 700; line-height: 1.4; margin-bottom: 15px; color: #fff; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">
+				ভালোবাসার সেরা উপহার, <br><span style="color: #fde047;">কাস্টম গিফট গ্যালারিতে</span>
+			</h1>
+			<p style="color: #f3f4f6; font-size: 15px; margin-bottom: 15px; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">
+				প্রিয়জনের বিশেষ দিনগুলোতে দিন কাস্টমাইজড উপহারের ছোঁয়া, <br>এক ক্লিকেই অর্ডার করুন আপনার পছন্দের ডিজাইন..
+			</p>
+			
+			<a href="#gallery" class="btn bangla-text" style="background: #000; color: #fff; padding: 10px 24px; border-radius: 30px; font-weight: bold; text-decoration: none; display: inline-block; border: 1px solid #fff; margin-top: 5px;">গ্যালারি দেখুন <i class="fa fa-arrow-right" style="margin-left: 5px;"></i></a>
+		</div>
+
+		<!-- ডান পাশের ভিডিও -->
+		<div class="hero-video">
+			<video autoplay loop muted playsinline>
+				<source src="videos/promo.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</div>	
+</section>
+
+<!-- gallery section -->
+<section id="gallery" class="parallax-section" style="padding: 60px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center" style="margin-bottom: 20px;">
+				<h1 class="heading"><b>GIFT GALLERY</b></h1>
+				<hr>
+			</div>
+		</div>
+
+		<!-- Products Grid Wrapper -->
+		<div class="row" style="display: flex; flex-wrap: wrap; gap: 0;">
+			
+			<!-- Item 1: Acrylic -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="acrylic.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img1.jpg" alt="Acrylic Design" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Acrylic Design</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Photo Frames | Acrylic Clocks | Name Plates | ...</p>
+						<a href="acrylic.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 2: Leather -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="leather.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img3.jpg" alt="Leather Design" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Leather Design</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Photo Engraving | Leather Wallet | Diary | ...</p>
+						<a href="leather.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 3: Mug -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="mug.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img4.jpg" alt="Customized Mug Design" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Customized Mug Design</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Custom Mugs | Magic Mugs | Flower Mugs | ...</p>
+						<a href="mug.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 4: Wooden -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="wooden.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img2.jpg" alt="Wooden Design" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Wooden Design</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Photo Frame | Mobile Stand | Key Rings | ...</p>
+						<a href="wooden.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 5: Metal -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="metal.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img5.jpg" alt="Metal Design" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Metal Design</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Custom Key Ring | Name Plates | Wall Signs | ...</p>
+						<a href="metal.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 6: Bottle -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="bottle.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img6.jpg" alt="Bottle Design" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Bottle Design</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Liquid Motion | Lighting Bottle | UV Print Bottle | ...</p>
+						<a href="bottle.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 7 -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="bottle.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img7.jpg" alt="Custom Gift Item 7" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Custom Gift Item 7</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;"> - | - | - | ...</p>
+						<a href="acrylic.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 8: Miniature Box -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="miniature.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img8.jpg" alt="Miniature Box" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Miniature Box</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Anniversary | Birthday | Special Day | ...</p>
+						<a href="miniature.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item 9: Customized Showpiece -->
+			<div class="col-md-4 col-sm-6 product-card" style="margin-bottom: 35px;">
+				<div style="background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+					<a href="showpiece.html" data-lightbox-gallery="gallery1" style="display: block;">
+						<img src="images/gallery-img9.jpg" alt="Customized Showpiece" style="width: 100%; height: 230px; object-fit: cover; border-radius: 6px; display: block;">
+					</a>
+					<div style="padding-top: 12px;">
+						<h3 class="product-title" style="margin: 0 0 6px 0; font-size: 18px; color: #333;">Customized Showpiece</h3>
+						<p style="margin-bottom: 10px; font-size: 14px; color: #555;">Customized Showpiece...</p>
+						<a href="showpiece.html" class="direct-link" style="background-color: #000 !important; color: #fff !important; padding: 7px 16px; font-size: 12px; font-weight: bold; border-radius: 4px; text-decoration: none; display: inline-block;">See More</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- MATERIAL SECTION -->
+<section id="menu" class="parallax-section" style="padding: 60px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center" style="margin-bottom: 40px;">
+				<h1 class="heading">MATERIAL</h1>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- ITEM 1 -->
+			<div class="col-md-6 col-sm-6 wow fadeInUp product-card" data-wow-delay="0.3s" style="margin-bottom: 30px;">
+				<div style="display: flex; align-items: center; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+					<img src="images/gallery-img01.jpg" alt="Led Acrylic Table Lamp" style="width: 190px; height: 190px; object-fit: cover; border-radius: 6px; margin-right: 15px; flex-shrink: 0;">
+					<div style="flex-grow: 1;">
+						<h4 class="product-title" style="margin: 0 0 5px 0; font-weight: bold; color: #333;">Led Acrylic Table Lamp <span class="product-price" style="float: right; color: #e74c3c;">300 - 800 Tk</span></h4>
+						<p style="margin: 0 0 10px 0; font-size: 13px; color: #666;">Wood Light Base LED Desk Table Lamp USB Power Acrylic Light.</p>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 4px 12px; font-size: 12px; border-radius: 4px; text-decoration: none;">Order Now</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- ITEM 2 -->
+			<div class="col-md-6 col-sm-6 wow fadeInUp product-card" data-wow-delay="0.3s" style="margin-bottom: 30px;">
+				<div style="display: flex; align-items: center; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+					<img src="images/gallery-img02.jpg" alt="Wooden Photo Frame" style="width: 190px; height: 190px; object-fit: cover; border-radius: 6px; margin-right: 15px; flex-shrink: 0;">
+					<div style="flex-grow: 1;">
+						<h4 class="product-title" style="margin: 0 0 5px 0; font-weight: bold; color: #333;">Wooden Photo Frame <span class="product-price" style="float: right; color: #e74c3c;">60 - 300 Tk</span></h4>
+						<p style="margin: 0 0 10px 0; font-size: 13px; color: #666;">Personalized Family Photo Engraved Wooden Frame.</p>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 4px 12px; font-size: 12px; border-radius: 4px; text-decoration: none;">Order Now</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- ITEM 3 -->
+			<div class="col-md-6 col-sm-6 wow fadeInUp product-card" data-wow-delay="0.6s" style="margin-bottom: 30px;">
+				<div style="display: flex; align-items: center; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+					<img src="images/gallery-img03.jpg" alt="Wooden Key Ring" style="width: 190px; height: 190px; object-fit: cover; border-radius: 6px; margin-right: 15px; flex-shrink: 0;">
+					<div style="flex-grow: 1;">
+						<h4 class="product-title" style="margin: 0 0 5px 0; font-weight: bold; color: #333;">Wooden Key Ring <span class="product-price" style="float: right; color: #e74c3c;">10 - 100 Tk</span></h4>
+						<p style="margin: 0 0 10px 0; font-size: 13px; color: #666;">Laser Engraving Personalised Wooden Key Rings Wood Keychain Key Ring.</p>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 4px 12px; font-size: 12px; border-radius: 4px; text-decoration: none;">Order Now</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- ITEM 4 -->
+			<div class="col-md-6 col-sm-6 wow fadeInUp product-card" data-wow-delay="0.6s" style="margin-bottom: 30px;">
+				<div style="display: flex; align-items: center; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+					<img src="images/gallery-img05.jpg" alt="Wooden Mobile Stand" style="width: 190px; height: 190px; object-fit: cover; border-radius: 6px; margin-right: 15px; flex-shrink: 0;">
+					<div style="flex-grow: 1;">
+						<h4 class="product-title" style="margin: 0 0 5px 0; font-weight: bold; color: #333;">Wooden Mobile Stand <span class="product-price" style="float: right; color: #e74c3c;">25 - 60 Tk</span></h4>
+						<p style="margin: 0 0 10px 0; font-size: 13px; color: #666;">Personalised Phone Stand Laser Cut File, Mobile Phone Wooden Stand.</p>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 4px 12px; font-size: 12px; border-radius: 4px; text-decoration: none;">Order Now</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- ITEM 5 -->
+			<div class="col-md-6 col-sm-6 wow fadeInUp product-card" data-wow-delay="0.6s" style="margin-bottom: 30px;">
+				<div style="display: flex; align-items: center; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+					<img src="images/gallery-img06.jpg" alt="Custom Gift Item 5" style="width: 190px; height: 190px; object-fit: cover; border-radius: 6px; margin-right: 15px; flex-shrink: 0;">
+					<div style="flex-grow: 1;">
+						<h4 class="product-title" style="margin: 0 0 5px 0; font-weight: bold; color: #333;">Custom Gift Item 5 <span class="product-price" style="float: right; color: #e74c3c;">10 - 100 Tk</span></h4>
+						<p style="margin: 0 0 10px 0; font-size: 13px; color: #666;">Laser Engraving Personalised Wooden Key Rings Wood Keychain Key Ring.</p>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 4px 12px; font-size: 12px; border-radius: 4px; text-decoration: none;">Order Now</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- ITEM 6 -->
+			<div class="col-md-6 col-sm-6 wow fadeInUp product-card" data-wow-delay="0.6s" style="margin-bottom: 30px;">
+				<div style="display: flex; align-items: center; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+					<img src="images/gallery-img04.jpg" alt="Metal Keyring" style="width: 190px; height: 190px; object-fit: cover; border-radius: 6px; margin-right: 15px; flex-shrink: 0;">
+					<div style="flex-grow: 1;">
+						<h4 class="product-title" style="margin: 0 0 5px 0; font-weight: bold; color: #333;">Metal Keyring <span class="product-price" style="float: right; color: #e74c3c;">120 - 210 Tk</span></h4>
+						<p style="margin: 0 0 10px 0; font-size: 13px; color: #666;">Metal Keychain Blanks for Engraving Stainless Steel Blank Key Ring.</p>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 4px 12px; font-size: 12px; border-radius: 4px; text-decoration: none;">Order Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>		
+
+<!-- SPECIAL GIFT SECTION -->
+<section id="team" class="parallax-section" style="padding: 60px 0; background-color: #f9f9f9;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center" style="margin-bottom: 40px;">
+				<h1 class="heading">SPECIAL GIFT</h1>
+				<hr>
+<!-- Moving Offer Bar Section -->
+<style>
+    .offer-marquee-container {
+        background: linear-gradient(135deg, #d97706, #b45309);
+        color: #ffffff;
+        padding: 6px 0; 
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        overflow: hidden;
+        white-space: nowrap;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-top: 10px; 
+        margin-bottom: 0;
+    }
+    .offer-marquee-container marquee {
+        display: block;
+        width: 100%;
+    }
+    .offer-marquee-container span {
+        margin-right: 60px;
+    }
+</style>
+
+<div class="offer-marquee-container">
+    <div class="container" style="padding-left: 10px; padding-right: 10px;">
+        <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+            <span><i class="fa fa-bullhorn" style="margin-right: 6px;"></i> বিশাল ছাড়! যেকোনো কাস্টমাইজড গিফটের উপর চলছে আকর্ষণীয় ডিসকাউন্ট অফার! 🎁</span>
+            <span><i class="fa fa-truck" style="margin-right: 6px;"></i> পুরো বাংলাদেশেই ক্যাশ অন ডেলিভারিতে হোম ডেলিভারি সুবিধা! 🚚</span>
+            <span><i class="fa fa-phone" style="margin-right: 6px;"></i> অর্ডার করতে কল করুন অথবা WhatsApp করুন: +880 1863 585076 📞</span>
+        </marquee>
+    </div>
+</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- CARD 1 -->
+			<div class="col-md-4 col-sm-4 wow fadeInUp product-card" data-wow-delay="0.3s" style="margin-bottom: 30px;">
+				<div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+					<div style="width: 100%; height: 280px; overflow: hidden;">
+						<img src="images/team1.jpg" alt="Customized Gifts for Her" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
+					<div style="padding: 20px 15px; text-align: center;">
+						<h3 class="product-title" style="margin: 0 0 15px 0; font-size: 18px; font-weight: 700; color: #333;">Customized Gifts for Her</h3>
+						<div class="product-price" style="display: none;">Package</div>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 10px 24px; font-size: 13px; font-weight: bold; border-radius: 25px; text-decoration: none; display: inline-block;">
+							Get The Package
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- CARD 2 -->
+			<div class="col-md-4 col-sm-4 wow fadeInUp product-card" data-wow-delay="0.6s" style="margin-bottom: 30px;">
+				<div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+					<div style="width: 100%; height: 280px; overflow: hidden;">
+						<img src="images/team2.jpg" alt="Customized Gifts for Him" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
+					<div style="padding: 20px 15px; text-align: center;">
+						<h3 class="product-title" style="margin: 0 0 15px 0; font-size: 18px; font-weight: 700; color: #333;">Customized Gifts for Him</h3>
+						<div class="product-price" style="display: none;">Package</div>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 10px 24px; font-size: 13px; font-weight: bold; border-radius: 25px; text-decoration: none; display: inline-block;">
+							Get The Package
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- CARD 3 -->
+			<div class="col-md-4 col-sm-4 wow fadeInUp product-card" data-wow-delay="0.9s" style="margin-bottom: 30px;">
+				<div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+					<div style="width: 100%; height: 280px; overflow: hidden;">
+						<img src="images/team3.jpg" alt="Customized Gifts for Kids" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
+					<div style="padding: 20px 15px; text-align: center;">
+						<h3 class="product-title" style="margin: 0 0 15px 0; font-size: 18px; font-weight: 700; color: #333;">Customized Gifts for Kids</h3>
+						<div class="product-price" style="display: none;">Package</div>
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 10px 24px; font-size: 13px; font-weight: bold; border-radius: 25px; text-decoration: none; display: inline-block;">
+							Get The Package
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="parallax-section" style="padding: 60px 0; background-color: #f9f9f9;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center" style="margin-bottom: 40px;">
+				<h1 class="heading">Contact Us</h1>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-sm-12">
+				<div class="product-card" style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); flex-wrap: wrap; gap: 20px;">
+					
+					<!-- Left Side Image -->
+					<div style="flex: 1; min-width: 250px; text-align: center;">
+						<img src="images/contact-img.jpg" alt="Contact Custom Gift Gallery" style="max-width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
+					</div>
+
+					<!-- Right Side Content & Button -->
+					<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
+						<h3 class="product-title" style="margin-top: 0; font-weight: bold; color: #333;">আমাদের সাথে যোগাযোগ করুন</h3>
+						<div class="product-price" style="display: none;">General Inquiry</div>
+						<p style="color: #666; font-size: 14px; margin-bottom: 25px;">
+							উপহার সম্পর্কিত যেকোনো তথ্য জানতে বা অর্ডার কনফার্ম করতে নিচের বাটনে ক্লিক করে ফর্মটি পূরণ করুন।
+						</p>
+						
+						<!-- Form Link Button -->
+						<button type="button" class="btn btn-order" data-toggle="modal" data-target="#orderModal" style="background-color: #000; color: #fff; padding: 12px 30px; font-size: 15px; font-weight: bold; border-radius: 25px; text-decoration: none; display: inline-block;">
+							Fill Up Order Form
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ================= ORDER FORM MODAL ================= -->
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #1a202c; color: #fff; border-bottom: none; padding: 15px 20px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 1;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="orderModalLabel" style="font-weight: 600;">Complete Your Pre-Order</h4>
+      </div>
+      <div class="modal-body">
+        <div class="jotform-crop-container">
+          <iframe src="https://form.jotform.com/262253934595466" title="Pre-Order Form"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer section -->
+<footer id="footer" class="parallax-section" style="padding: 50px 0 30px 0;">
+	<div class="container">
+		<div class="row">
+			<!-- Contact Info -->
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Contact Info.</h2>
+				<div class="ph">
+					<p><i class="fa fa-phone"></i> Phone</p>
+					<h4>+880 1863 585076, +880 1304 999999</h4>
+				</div>
+				<div class="ph">
+					<p><i class="fa fa-envelope"></i> E-Mail</p>
+					<h4>info@customgiftgallerybd.com </h4><h4>cgiftgallery@gmail.com </h4>
+				</div>
+				<div class="address">
+					<p><i class="fa fa-map-marker"></i> Our Location</p>
+					<h4>Mansurabad, Front of Passport Office, Double Mooring, Chattogram.</h4>
+				</div>
+			</div>
+
+			<!-- Useful Links & Verified Section -->
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Useful Links</h2>
+				<ul class="footer-links">
+					<li><a href="about.html"><i class="fa fa-angle-right"></i><b> About CGG!</b></a></li>
+					<li><a href="how-to-order.html"><i class="fa fa-angle-right"></i><b> How to Order?</b></a></li>
+					<li><a href="terms.html"><i class="fa fa-angle-right"></i><b> Terms & Conditions</b></a></li>
+					<li><a href="privacy.html"><i class="fa fa-angle-right"></i><b> Privacy Policy</b></a></li>
+					<li><a href="billing.html"><i class="fa fa-angle-right"></i><b> Billing Policy</b></a></li>
+					<li><a href="refund.html"><i class="fa fa-angle-right"></i><b> Refund & Return Policy</b></a></li>
+				</ul>
+
+				<!-- Verified & Trusted Perfect Fit -->
+				<div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+					<div style="font-size: 12.5px; color: #fff; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px;">
+						<i class="fa fa-shield" style="color: #22c55e;"></i> Verified & Trusted
+					</div>
+					<div style="display: flex; flex-direction: column; gap: 5px;">
+						<div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.15); padding: 5px 8px; border-radius: 4px; font-size: 11px; color: #d1d5db;">
+							<i class="fa fa-check-circle" style="color: #22c55e; margin-right: 5px;"></i> 100% Verified Custom Gift Shop
+						</div>
+						<div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.15); padding: 5px 8px; border-radius: 4px; font-size: 11px; color: #d1d5db;">
+							<i class="fa fa-lock" style="color: #d97706; margin-right: 5px;"></i> Secure Checkout & Safe Transactions
+						</div>
+						<div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.15); padding: 5px 8px; border-radius: 4px; font-size: 11px; color: #d1d5db;">
+							<i class="fa fa-star" style="color: #eab308; margin-right: 5px;"></i> Trusted by Thousands of Customers
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Follow Us & Payment Methods -->
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Follow Us</h2>
+				<ul class="social-icon">
+					<li><a href="https://wa.me/8801863585076" target="_blank" class="fa-brands fa-whatsapp wow bounceIn" data-wow-delay="0.6s" title="WhatsApp"></a></li>
+					<li><a href="https://www.facebook.com/customgift76/" target="_blank" class="fa-brands fa-facebook-f wow bounceIn" data-wow-delay="0.3s" title="Facebook"></a></li>
+					<li><a href="https://www.tiktok.com/@custom.gift.galle" target="_blank" class="fa-brands fa-tiktok wow bounceIn" data-wow-delay="0.5s" title="TikTok"></a></li>
+					<li><a href="https://wa.link/1royz8" target="_blank" class="fa-brands fa-youtube wow bounceIn" data-wow-delay="0.9s" title="YouTube"></a></li>
+					<li><a href="mailto:info@customgiftgallerybd.com" class="fa-solid fa-envelope wow bounceIn" data-wow-delay="0.9s" title="Email"></a></li>
+				</ul>
+
+				<!-- Payment Methods & Highlights -->
+				<div style="margin-top: 15px;">
+					<h2 class="heading" style="font-size: 14px; margin-bottom: 8px; text-transform: uppercase;">We Accept</h2>
+					<div>
+						<span class="payment-badge"><i class="fa fa-mobile"></i> bKash</span>
+						<span class="payment-badge"><i class="fa fa-mobile"></i> Nagad</span>
+						<span class="payment-badge"><i class="fa fa-mobile"></i> Rocket</span>
+						<span class="payment-badge"><i class="fa fa-mobile"></i> Upay</span>
+						<span class="payment-badge"><i class="fa fa-university"></i> CellFin</span>
+						<span class="payment-badge"><i class="fa fa-qrcode"></i> Bangla QR</span>
+						<span class="payment-badge"><i class="fa fa-credit-card"></i> Visa</span>
+						<span class="payment-badge"><i class="fa fa-credit-card"></i> Mastercard</span>
+						<span class="payment-badge"><i class="fa fa-credit-card"></i> AMEX</span>
+						<span class="payment-badge"><i class="fa fa-truck"></i> Cash on Delivery</span>
+					</div>
+
+					<div style="margin-top: 10px; color: #d1d5db; font-size: 12px;">
+						<p style="margin-bottom: 4px;"><i class="fa fa-truck" style="color: #d97706;"></i> <strong>Fast Home Delivery All Over Bangladesh</strong></p>
+						<p style="margin-bottom: 0;"><i class="fa fa-shield" style="color: #22c55e;"></i> <strong>100% Quality Guaranteed Custom Gift Items</strong></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- copyright section -->
+<section id="copyright" style="background: #0d0d0d; padding: 22px 0; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <style>
+                    .hover-link {
+                        color: #9ca3af;
+                        transition: color 0.3s ease;
+                        text-decoration: none;
+                    }
+                    .hover-link:hover {
+                        color: #d97706 !important;
+                        text-decoration: none;
+                    }
+                </style>
+                <p style="font-size: 13px; color: #9ca3af; letter-spacing: 0.5px; margin: 0; word-spacing: 2px;">
+                    Copyright &copy; 2026 
+                    <a href="index.html" class="hover-link" style="font-weight: 600;">Custom Gift Gallery</a> 
+                    &bull; 
+                    Developed by 
+                    <a href="https://wa.me/8801304999999" target="_blank" class="hover-link" style="font-weight: 600;">Abdur Rahman</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JAVASCRIPT JS FILES -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+
+<!-- Nivo Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nivo-lightbox/1.2.0/nivo-lightbox.min.js"></script>
+
+<script src="js/custom.js"></script>
+
+<!-- Floating WhatsApp, Call & Go to Top Buttons -->
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
+    
+    <!-- Go to Top Button -->
+    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" title="Go to top" style="background: rgba(0, 0, 0, 0.7); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; text-decoration: none;">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/8801863585076" target="_blank" title="Chat on WhatsApp" style="background: #25d366; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; text-decoration: none;">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Call Button -->
+    <a href="tel:+8801863585076" title="Call Us" style="background: #007bff; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; text-decoration: none;">
+        <i class="fa fa-phone"></i>
+    </a>
+</div>
+
+<!-- Modern Cookies Consent Banner -->
+<div id="cookieConsentBanner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(17, 17, 17, 0.95); backdrop-filter: blur(10px); border-top: 1px solid rgba(255, 255, 255, 0.1); color: #fff; padding: 15px 20px; z-index: 99999; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; box-shadow: 0 -4px 20px rgba(0,0,0,0.5);">
+    <div style="display: flex; align-items: center; gap: 12px; max-width: 900px; flex: 1; min-width: 280px;">
+        <span style="font-size: 22px; color: #d97706;"><i class="fa fa-cookie-bite">🍪</i></span>
+        <p style="margin: 0; font-size: 13.5px; color: #d1d5db; line-height: 1.5;">
+            আমরা আপনার ব্রাউজিং অভিজ্ঞতা উন্নত করতে এবং সেরা কাস্টমাইজড গিফট সার্ভিস নিশ্চিত করতে কুকিজ ব্যবহার করছি। 
+        </p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <button onclick="acceptCookies()" style="background: #d97706; color: #fff; border: none; padding: 8px 20px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.3s;">
+            স্বীকার করলাম (Accept)
+        </button>
+    </div>
+</div>
+
+<script>
+    // কুকিজ অ্যাক্সেপ্ট করলে ব্যানার লুকিয়ে রাখবে এবং ব্রাউজারে স্থায়ী সেভ করে রাখবে
+    function acceptCookies() {
+        localStorage.setItem('cgg_cookie_accepted', 'true');
+        let banner = document.getElementById('cookieConsentBanner');
+        if (banner) {
+            banner.style.display = 'none';
+        }
+    }
+
+    // পেজ লোড হওয়ার সময় চেক করবে আগে অলরেডি এক্সেপ্ট করা আছে কিনা
+    window.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem('cgg_cookie_accepted') === 'true') {
+            let banner = document.getElementById('cookieConsentBanner');
+            if (banner) {
+                banner.style.display = 'none';
+            }
+        }
+    });
+</script>
+
+<script>
+  document.querySelectorAll('.btn-order').forEach(button => {
+    button.addEventListener('click', function() {
+      // কার্ডের ভেতর থেকে প্রোডাক্টের নাম এবং দাম খুঁজে বের করা
+      let card = this.closest('.product-card');
+      let titleElem = card.querySelector('.product-title');
+      let priceElem = card.querySelector('.product-price');
+      let imgElem = card.querySelector('img');
+      
+      let productName = titleElem ? titleElem.innerText.split('\n')[0].trim() : "Custom Gift";
+      let productPrice = priceElem ? priceElem.innerText.trim() : "";
+      let imgInfo = imgElem ? " | Image: " + (imgElem.alt || "Product") + " (" + imgElem.getAttribute('src').split('/').pop() + ")" : "";
+      
+      let fullDetails = productName + (productPrice ? " - Price: " + productPrice : "") + imgInfo;
+      
+      // Jotform লিঙ্ক এবং প্রি-পোপুলেট সেটআপ
+      let jotformBaseUrl = "https://form.jotform.com/262253934595466";
+      let finalUrl = jotformBaseUrl + "?typeA58=" + encodeURIComponent(fullDetails);
+      
+      let iframe = document.querySelector('#orderModal iframe');
+      if(iframe) {
+        iframe.src = finalUrl;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
